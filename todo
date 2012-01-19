@@ -1,0 +1,5 @@
+When installed by pip, hanzi_basics isn't on the python path.
+A file 'hanzi-basics.egg-link' is created in site-packages.
+I think this should create a link to the venv/src/hanzi-basics directory.
+When this is done manually the installation works.
+
