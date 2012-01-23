@@ -1,4 +1,5 @@
 #coding='utf-8'
+from __future__ import print_function, division, unicode_literals
 from django.db import models
 from hanzi_basics.pinyin_nums_to_markers import pinyin_nums_to_markers
 
@@ -45,7 +46,7 @@ class Hanzi(models.Model):
     char = models.CharField(max_length=1, unique=True)
     # The rank from ordering characters by frequency of use.
     # Most used character is rank 1.
-    use_rank = models.IntegerField()
+    use_rank = models.IntegerField(null=True, blank=True)
 
     @staticmethod
     def get_or_create(char, use_rank):
@@ -65,6 +66,7 @@ class Hanzi(models.Model):
         return h
 
     def __unicode__(self):
+	# char is stored in utf8, convert to unicode for use here.
         urep = "({0}) {1} ({2} sounds)"\
                    .format(self.use_rank, self.char, self.syllables.count())
         return urep
