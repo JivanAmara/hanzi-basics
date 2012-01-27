@@ -1,7 +1,7 @@
 #coding='utf-8'
 from __future__ import print_function, division, unicode_literals
 from django.db import models
-from hanzi_basics.pinyin_nums_to_markers import pinyin_nums_to_markers
+from hanzi_basics.pinyin_nums_to_markers import pinyin_num_to_tone_marker
 
 class PinyinSyllable(models.Model):
     sound = models.CharField(max_length=10)
@@ -30,15 +30,11 @@ class PinyinSyllable(models.Model):
         return ps
 
     def __unicode__(self):
-        # Sounds are stored in the database using utf-8, convert to unicode.
-        utf8_sound = self.sound
-        u_sound = utf8_sound.decode('utf-8')
-
-        return "{0}{1}".format(u_sound, self.tone)
+        return "{0}{1}".format(self.sound, self.tone)
 
     def marker_display(self):
         numerical = '{0}'.format(self)
-        marker = pinyin_nums_to_markers[numerical]
+        marker = pinyin_num_to_tone_marker[numerical]
         return marker
 
 class Hanzi(models.Model):
