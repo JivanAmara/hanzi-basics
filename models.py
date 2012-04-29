@@ -6,6 +6,7 @@ from hanzi_basics.pinyin_nums_to_markers import pinyin_num_to_tone_marker
 class PinyinSyllable(models.Model):
     sound = models.CharField(max_length=10)
     tone = models.IntegerField()
+    display = models.CharField(max_length=10)
 
     @staticmethod
     def get_or_create(sound, tone):
