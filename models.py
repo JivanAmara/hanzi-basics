@@ -7,6 +7,7 @@ class PinyinSyllable(models.Model):
     sound = models.CharField(max_length=10)
     tone = models.IntegerField()
     display = models.CharField(max_length=10)
+    verified = models.BooleanField(default=False)
 
     @staticmethod
     def get_or_create(sound, tone):
@@ -31,7 +32,7 @@ class PinyinSyllable(models.Model):
         return ps
 
     def __unicode__(self):
-        return "{0}{1}".format(self.sound, self.tone)
+        return "{0}{1} ({2})".format(self.sound, self.tone, self.display)
 
     def marker_display(self):
         numerical = '{0}'.format(self)
