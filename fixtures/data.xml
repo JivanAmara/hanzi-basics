@@ -8148,6 +8148,195 @@
         <field type="BooleanField" name="verified">True</field>
         <field type="IntegerField" name="context_id"><None></None></field>
     </object>
+    <object pk="1165" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">ming</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">ming</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1166" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">tao</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">tao</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1167" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">shu</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">shu</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1168" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">yang</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">yang</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1169" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">li</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">li</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1170" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">hu</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">hu</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1171" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">qin</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">qin</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1172" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">sou</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">sou</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1173" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">nan</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">nan</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1174" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">kuai</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">kuai</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1175" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">nao</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">nao</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1176" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">du</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">du</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1177" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">zhai</field>
+        <field type="IntegerField" name="tone">3</field>
+        <field type="CharField" name="display">zhǎi</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1178" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">ting</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">ting</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1179" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">gu</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">gu</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1180" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">ju</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">ju</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1181" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">xun</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">xun</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1182" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">zhi</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">zhi</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1183" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">jiu</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">jiu</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1184" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">lao</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">lao</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1185" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">mao</field>
+        <field type="IntegerField" name="tone">5</field>
+        <field type="CharField" name="display">mao</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1186" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">shao</field>
+        <field type="IntegerField" name="tone">2</field>
+        <field type="CharField" name="display">sháo</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1187" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">bai</field>
+        <field type="IntegerField" name="tone">1</field>
+        <field type="CharField" name="display">bāi</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1188" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">beng</field>
+        <field type="IntegerField" name="tone">1</field>
+        <field type="CharField" name="display">bēng</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1189" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">beng</field>
+        <field type="IntegerField" name="tone">2</field>
+        <field type="CharField" name="display">béng</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1190" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">beng</field>
+        <field type="IntegerField" name="tone">4</field>
+        <field type="CharField" name="display">bèng</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
+    <object pk="1191" model="hanzi_basics.pinyinsyllable">
+        <field type="CharField" name="sound">bie</field>
+        <field type="IntegerField" name="tone">1</field>
+        <field type="CharField" name="display">biē</field>
+        <field type="BooleanField" name="verified">True</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+    </object>
     <object pk="1" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">的</field>
         <field type="IntegerField" name="use_rank">1</field>
@@ -9021,7 +9210,7 @@
         <field type="IntegerField" name="use_rank">125</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="179"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="179"></object><object pk="1165"></object></field>
     </object>
     <object pk="126" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">其</field>
@@ -9385,7 +9574,7 @@
         <field type="IntegerField" name="use_rank">177</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="227"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="227"></object><object pk="1178"></object></field>
     </object>
     <object pk="178" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">世</field>
@@ -9721,7 +9910,7 @@
         <field type="IntegerField" name="use_rank">225</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="273"></object><object pk="274"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="273"></object><object pk="274"></object><object pk="1173"></object></field>
     </object>
     <object pk="226" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">神</field>
@@ -9952,7 +10141,7 @@
         <field type="IntegerField" name="use_rank">258</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="306"></object><object pk="307"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="306"></object><object pk="307"></object><object pk="1171"></object></field>
     </object>
     <object pk="259" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">界</field>
@@ -10162,7 +10351,7 @@
         <field type="IntegerField" name="use_rank">288</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="333"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="333"></object><object pk="1185"></object></field>
     </object>
     <object pk="289" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">林</field>
@@ -10197,7 +10386,7 @@
         <field type="IntegerField" name="use_rank">293</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="336"></object><object pk="337"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="336"></object><object pk="337"></object><object pk="1176"></object></field>
     </object>
     <object pk="294" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">统</field>
@@ -10351,7 +10540,7 @@
         <field type="IntegerField" name="use_rank">315</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="112"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="112"></object><object pk="1182"></object></field>
     </object>
     <object pk="316" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">思</field>
@@ -10456,7 +10645,7 @@
         <field type="IntegerField" name="use_rank">330</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="69"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="69"></object><object pk="1174"></object></field>
     </object>
     <object pk="331" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">条</field>
@@ -10841,7 +11030,7 @@
         <field type="IntegerField" name="use_rank">385</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="85"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="85"></object><object pk="1169"></object></field>
     </object>
     <object pk="386" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">息</field>
@@ -11793,7 +11982,7 @@
         <field type="IntegerField" name="use_rank">521</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="504"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="504"></object><object pk="1168"></object></field>
     </object>
     <object pk="522" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">哥</field>
@@ -12640,7 +12829,7 @@
         <field type="IntegerField" name="use_rank">642</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="573"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="573"></object><object pk="1170"></object></field>
     </object>
     <object pk="643" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">护</field>
@@ -12997,7 +13186,7 @@
         <field type="IntegerField" name="use_rank">693</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="603"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="603"></object><object pk="1179"></object></field>
     </object>
     <object pk="694" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">划</field>
@@ -15489,7 +15678,7 @@
         <field type="IntegerField" name="use_rank">1049</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="771"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="771"></object><object pk="1175"></object></field>
     </object>
     <object pk="1050" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">恐</field>
@@ -16077,7 +16266,7 @@
         <field type="IntegerField" name="use_rank">1133</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="747"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="747"></object><object pk="1181"></object></field>
     </object>
     <object pk="1134" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">圆</field>
@@ -16917,7 +17106,7 @@
         <field type="IntegerField" name="use_rank">1253</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="259"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="259"></object><object pk="1167"></object></field>
     </object>
     <object pk="1254" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">谋</field>
@@ -19066,7 +19255,7 @@
         <field type="IntegerField" name="use_rank">1561</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="56"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="56"></object><object pk="1183"></object></field>
     </object>
     <object pk="1561" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">幽</field>
@@ -21481,7 +21670,7 @@
         <field type="IntegerField" name="use_rank">1906</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="148"></object><object pk="470"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="148"></object><object pk="470"></object><object pk="1184"></object></field>
     </object>
     <object pk="1906" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">笼</field>
@@ -22524,7 +22713,7 @@
         <field type="IntegerField" name="use_rank">2055</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="489"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="489"></object><object pk="1180"></object></field>
     </object>
     <object pk="2055" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">泳</field>
@@ -25933,7 +26122,7 @@
         <field type="IntegerField" name="use_rank">2592</field>
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id"><None></None></field>
-        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="754"></object></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="754"></object><object pk="1166"></object></field>
     </object>
     <object pk="2542" model="hanzi_basics.hanzi">
         <field type="CharField" name="char">捞</field>
@@ -26620,5 +26809,313 @@
         <field type="BooleanField" name="verified">False</field>
         <field type="IntegerField" name="context_id">32</field>
         <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="223"></object></field>
+    </object>
+    <object pk="2640" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">锻</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">36</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="478"></object></field>
+    </object>
+    <object pk="2641" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">铅</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">36</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="419"></object></field>
+    </object>
+    <object pk="2642" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">澡</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">36</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="428"></object></field>
+    </object>
+    <object pk="2643" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">蕉</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">36</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="222"></object></field>
+    </object>
+    <object pk="2644" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">嗽</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="1172"></object></field>
+    </object>
+    <object pk="2645" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">窄</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="1177"></object></field>
+    </object>
+    <object pk="2646" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">.</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">37</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="158"></object></field>
+    </object>
+    <object pk="2647" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">燥</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">37</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="450"></object></field>
+    </object>
+    <object pk="2648" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">饺</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">37</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="550"></object></field>
+    </object>
+    <object pk="2649" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">垃</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">37</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="459"></object></field>
+    </object>
+    <object pk="2650" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">袜</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">37</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="966"></object></field>
+    </object>
+    <object pk="2651" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">柿</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">37</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="7"></object></field>
+    </object>
+    <object pk="2652" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">咸</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">37</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="876"></object></field>
+    </object>
+    <object pk="2653" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">钥</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">37</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="63"></object></field>
+    </object>
+    <object pk="2654" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">勺</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="1186"></object></field>
+    </object>
+    <object pk="2655" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">丙</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="994"></object></field>
+    </object>
+    <object pk="2656" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">惭</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="841"></object></field>
+    </object>
+    <object pk="2657" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">翅</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="911"></object></field>
+    </object>
+    <object pk="2658" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">屉</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="441"></object></field>
+    </object>
+    <object pk="2659" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">嚏</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="441"></object></field>
+    </object>
+    <object pk="2660" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">耽</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="432"></object></field>
+    </object>
+    <object pk="2661" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">皂</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="450"></object></field>
+    </object>
+    <object pk="2662" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">膊</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="1099"></object></field>
+    </object>
+    <object pk="2663" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">鸽</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="465"></object></field>
+    </object>
+    <object pk="2664" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">佣</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="793"></object></field>
+    </object>
+    <object pk="2665" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">蝴</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="47"></object></field>
+    </object>
+    <object pk="2666" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">煎</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="201"></object></field>
+    </object>
+    <object pk="2667" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">狡</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="550"></object></field>
+    </object>
+    <object pk="2668" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">猾</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="268"></object></field>
+    </object>
+    <object pk="2669" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">桔</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="472"></object></field>
+    </object>
+    <object pk="2670" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">匀</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="554"></object></field>
+    </object>
+    <object pk="2671" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">椒</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="222"></object></field>
+    </object>
+    <object pk="2672" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">厘</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="456"></object></field>
+    </object>
+    <object pk="2673" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">浏</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="359"></object></field>
+    </object>
+    <object pk="2674" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">馒</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="971"></object></field>
+    </object>
+    <object pk="2675" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">魅</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="688"></object></field>
+    </object>
+    <object pk="2676" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">删</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="243"></object></field>
+    </object>
+    <object pk="2677" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">髦</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="333"></object></field>
+    </object>
+    <object pk="2678" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">橡</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id">38</field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="188"></object></field>
+    </object>
+    <object pk="2679" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">掰</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="1187"></object></field>
+    </object>
+    <object pk="2680" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">崩</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="1188"></object></field>
+    </object>
+    <object pk="2681" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">甭</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="1189"></object></field>
+    </object>
+    <object pk="2682" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">蹦</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="1190"></object></field>
+    </object>
+    <object pk="2683" model="hanzi_basics.hanzi">
+        <field type="CharField" name="char">憋</field>
+        <field type="IntegerField" name="use_rank"><None></None></field>
+        <field type="BooleanField" name="verified">False</field>
+        <field type="IntegerField" name="context_id"><None></None></field>
+        <field to="hanzi_basics.pinyinsyllable" name="syllables" rel="ManyToManyRel"><object pk="1191"></object></field>
     </object>
 </django-objects>
