@@ -1,7 +1,8 @@
 #coding='utf-8'
 from __future__ import print_function, division, unicode_literals
+
 from django.db import models
-from hanzi_basics.pinyin_nums_to_markers import pinyin_num_to_tone_marker
+from hanzi_basics.pinyin_nums_to_markers import num_to_tone
 import logging
 
 logger = logging.getLogger(__name__)
@@ -42,7 +43,7 @@ class PinyinSyllable(models.Model):
 
     def marker_display(self):
         numerical = '{0}'.format(self)
-        marker = pinyin_num_to_tone_marker[numerical]
+        marker = num_to_tone(numerical)
         return marker
 
 class Hanzi(models.Model):
