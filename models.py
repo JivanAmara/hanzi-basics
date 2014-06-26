@@ -42,7 +42,7 @@ class PinyinSyllable(models.Model):
         return "{0}{1} ({2})".format(self.sound, self.tone, self.display)
 
     def marker_display(self):
-        numerical = '{0}'.format(self)
+        numerical = '{0}{1}'.format(self.sound, self.tone)
         marker = num_to_tone(numerical)
         return marker
 

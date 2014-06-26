@@ -29,7 +29,7 @@ def replace_untoned_vowel_with_toned(syllable_text):
 
     tone = syllable_text[-1]
     if tone not in ('1', '2', '3', '4', '5'):
-        msg = 'syllable_text {} is invalid.  It should have an integer (1-5) as the last character'\
+        msg = 'syllable_text "{}" is invalid.  It should have an integer (1-5) as the last character'\
                   .format(syllable_text)
         raise Exception(msg)
     if tone == '5':
