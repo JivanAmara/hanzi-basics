@@ -1,4 +1,4 @@
-# coding='utf-8'
+# -*- coding: utf-8 -*-
 """ @brief contains a dictionary 'pinyin_nums_to_markers' keying pinyin with
         numerical tones to pinyin with tone markers (utf-8).
     @author jivan
@@ -10,7 +10,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class MultipleVowels(Exception):
+class UnsupportedVowelCombination(Exception):
     pass
 
 
@@ -26,21 +26,53 @@ def replace_untoned_vowel_with_toned(syllable_text):
         'e': {'1': '\u0113', '2': '\xe9', '3': '\u011b', '4': '\xe8'},
         'u': {'1': '\u016b', '2': '\xfa', '3': '\u01d4', '4': '\xf9'},
     }
+    vowel_combination_tone_marks_length_2 = {
+        'ai': {'1': 'āi', '2': 'ái', '3': 'ǎi', '4': 'ài'},
+        'ao': {'1': 'āo', '2': 'áo', '3': 'ǎo', '4': 'ào'},
+        'ia': {'1': 'iā', '2': 'iá', '3': 'iǎ', '4': 'ià'},
+        'ie': {'1': 'iē', '2': 'ié', '3': 'iě', '4': 'iè'},
+        'ei': {'1': 'ēi', '2': 'éi', '3': 'ěi', '4': 'èi'},
+        'ou': {'1': 'ōu', '2': 'óu', '3': 'ǒu', '4': 'òu'},
+        'ue': {'1': 'uē', '2': 'ué', '3': 'uě', '4': 'uè'},
+        'ui': {'1': 'uī', '2': 'uí', '3': 'uǐ', '4': 'uì'},
+        'uo': {'1': 'uō', '2': 'uó', '3': 'uǒ', '4': 'uò'},
+    }
+    vowel_combination_tone_marks_length_3 = {
+        'iao': {'1': 'iāo', '2': 'iáo', '3': 'iǎo', '4': 'iào'},
+        'uai': {'1': 'uāi', '2': 'uái', '3': 'uǎi', '4': 'uài'},
+    }
 
     tone = syllable_text[-1]
     if tone not in ('1', '2', '3', '4', '5'):
         msg = 'syllable_text "{}" is invalid.  It should have an integer (1-5) as the last character'\
                   .format(syllable_text)
-        raise Exception(msg)
+        raise ValueError(msg)
     if tone == '5':
         ret = syllable_text[:-1]
     else:
         m = re.search('[aeiou]+', syllable_text)
-        vowel = m.group(0)
-        if len(vowel) > 1:
-            raise MultipleVowels(syllable_text)
-        toned_vowel = vowel_tone_marks[vowel][tone]
-        ret = syllable_text[:-1].replace(vowel, toned_vowel)
+        if m is None:
+            msg = 'syllable_text "{}" is invalid.  It should have a vowel'.format(syllable_text)
+            raise ValueError(msg)
+        vowels = m.group(0)
+        if len(vowels) > 3:
+            raise UnsupportedVowelCombination(syllable_text)
+        elif len(vowels) == 3:
+            if vowels not in vowel_combination_tone_marks_length_3:
+                raise UnsupportedVowelCombination(syllable_text)
+            else:
+                toned_vowels = vowel_combination_tone_marks_length_3[vowels][tone]
+        elif len(vowels) == 2:
+            if vowels not in vowel_combination_tone_marks_length_2:
+                raise UnsupportedVowelCombination(syllable_text)
+            else:
+                toned_vowels = vowel_combination_tone_marks_length_2[vowels][tone]
+        elif len(vowels) == 1:
+            toned_vowels = vowel_tone_marks[vowels][tone]
+        else:
+            raise Exception('Unexpected logic branch')
+
+        ret = syllable_text[:-1].replace(vowels, toned_vowels)
     return ret
 
 
@@ -53,11 +85,12 @@ def num_to_tone(syllable_text):
     """
     try: 
         ret = replace_untoned_vowel_with_toned(syllable_text)
-    except MultipleVowels:
+    except UnsupportedVowelCombination:
         try:
             ret = pinyin_num_to_tone_marker[syllable_text]
         except KeyError:
-            msg = 'Unable to convert "{}" to tone-marker representation.'.format(syllable_text)
+            msg = 'Support for converting "{}" to tone-marker representation not implemented.'\
+                      .format(syllable_text)
             logger.error(msg)
             ret = syllable_text
 
