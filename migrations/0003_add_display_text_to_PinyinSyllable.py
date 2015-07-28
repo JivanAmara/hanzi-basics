@@ -1,11 +1,11 @@
 # encoding: utf-8
 import datetime
 from south.db import db
-from south.v2 import SchemaMigration
+from south.v2 import DataMigration
 from django.db import models
 from hanzi_basics.pinyin_nums_to_markers import pinyin_num_to_tone_marker
 
-class Migration(SchemaMigration):
+class Migration(DataMigration):
 
     def forwards(self, orm):
         # Populating PinyinSyllable.display
