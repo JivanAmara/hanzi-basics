@@ -1,22 +1,25 @@
-# coding='utf-8'
-""" @brief distutils setup script for 'hanzi_basics'.
-    @author jivan
-    @since Jan 18, 2012
-"""
-from __future__ import unicode_literals, print_function, division
-from setuptools import setup, find_packages
+import os
+from setuptools import setup
+
+# allow setup.py to be run from any path
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
+    README = readme.read()
 
 setup(
-    name='hanzi_basics',
-    version='0.2',
-    packages=find_packages(),
-    # why aren't these found by find_packages?
-    scripts=['models.py', 'pinyin_nums_to_markers.py', ],
-
-    author = "Jivan Amara",
-    author_email = "Development@JivanAmara.net",
-    description = "A couple of models for handling Hanzi and their Pinyin",
-#    license = "Undecided",
-#    keywords = "hello world example examples",
-#    url = "http://unavailable",   # project home page, if any
+    author="Jivan Amara",
+    author_email="Development@JivanAmara.net",
+    license="Undecided",
+    name="hanzi-basics",
+    version="1.0.0",
+    packages=['hanzi_basics'],
+    description='Python package to provide basic models for Chinese language processing',
+    long_description=README,
+    classifiers=[
+        'Intended Audience :: Developers',
+        'Operating System :: POSIX :: Linux',
+        'Programming Language :: Python :: 2',
+    ]
 )
+
