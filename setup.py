@@ -12,10 +12,10 @@ setup(
     author_email="Development@JivanAmara.net",
     license="Undecided",
     name="hanzi-basics",
-    version="1.0.1",
+    version="1.0.2",
     packages=['hanzi_basics', 'hanzi_basics.migrations'],
     package_data={
-        'hanzi_basics': ['hanzi_basics/fixtures/data.xml'],
+        'hanzi_basics': ['fixtures/data.xml'],
     },
     description='Python package to provide basic models for Chinese language processing',
     long_description=README,
