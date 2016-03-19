@@ -21,8 +21,8 @@ class PinyinSyllable(models.Model):
     #    context which caused the syllable to be added.
     context_id = models.IntegerField(null=True, blank=True)
 
-#     def __unicode__(self):
-#         return "{0}{1} ({2})".format(self.sound, self.tone, self.display)
+    def __unicode__(self):
+        return "{0}{1} ({2})".format(self.sound, self.tone, self.display)
 
     # 2016-03-19 Probably before built-in or just didn't know there was a built-in.
     #    Remove if here past 2016-05-01
@@ -54,15 +54,14 @@ class PinyinSyllable(models.Model):
         return marker
 
 class Hanzi(models.Model):
-    syllables = models.ManyToManyField(PinyinSyllable)
+    syllables = models.ManyToManyField(PinyinSyllable, related_name='hanzis')
     char = models.CharField(max_length=10, unique=True)
     # The number of times this character was used in the sample
     #    (See script in populate_models for details).
     use_count = models.IntegerField(null=True, blank=True)
 
     def __unicode__(self):
-        u = self.char.decode('utf-8')
-        return u
+        return self.char
 
     # --- 2016-03-19 These might still be used by another package.
 #     verified = models.BooleanField(default=False)
