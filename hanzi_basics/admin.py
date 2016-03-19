@@ -1,5 +1,5 @@
 # coding=utf-8
-""" @brief 
+""" @brief
     @author jivan
     @updated Aug 20, 2011
 """
@@ -12,7 +12,7 @@ class PinyinSyllableAdmin(ModelAdmin):
     list_filter = ('sound', 'tone')
 
 class HanziAdmin(ModelAdmin):
-    ordering = ('use_rank',)
+    ordering = ('-use_count',)
 
 admin.site.register(Hanzi, HanziAdmin)
 admin.site.register(PinyinSyllable, PinyinSyllableAdmin)

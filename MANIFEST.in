@@ -1,1 +1,2 @@
-include hanzi_basics/fixtures/data.xml
+include hanzi_basics/management/commands/hanzi_frequency.html
+include hanzi_basics/management/commands/hanzi_frequency_files/school.css

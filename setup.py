@@ -13,9 +13,15 @@ setup(
     license="Undecided",
     name="hanzi-basics",
     version="1.0.2",
-    packages=['hanzi_basics', 'hanzi_basics.migrations'],
+    packages=['hanzi_basics', 'hanzi_basics.migrations',
+              'hanzi_basics.management',
+              'hanzi_basics.management.commands'
+    ],
     package_data={
-        'hanzi_basics': ['fixtures/data.xml'],
+        'hanzi_basics': [
+            'management/commands/hanzi_frequency.html',
+            'management/commands/hanzi_frequency_files/school.css',
+        ],
     },
     description='Python package to provide basic models for Chinese language processing',
     long_description=README,
