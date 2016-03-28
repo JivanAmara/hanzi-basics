@@ -9,11 +9,10 @@ from django.test import TestCase
 
 from hanzi_basics.pinyin_nums_to_markers import UnsupportedVowelCombination, \
     replace_untoned_vowel_with_toned
-from hanzi_basics.models import PinyinSyllable
 
 
 class TestCase_replace_untoned_vowel_with_toned(TestCase):
-    def replace_untoned_vowel_with_toned_test(self):
+    def test_replace_untoned_vowel_with_toned(self):
         valid = {
             'a1': 'ā',
             'zha1': 'zhā',
@@ -33,6 +32,8 @@ class TestCase_replace_untoned_vowel_with_toned(TestCase):
             'kuai4': 'kuài',
             'hui3': 'huǐ',
             'guo2': 'guó',
+            'e4': 'è',
+            'E4': 'è',
         }
         # Valid syllables not yet supported.
         unsupported = [
@@ -40,16 +41,16 @@ class TestCase_replace_untoned_vowel_with_toned(TestCase):
 
         # Invalid syllables
         invalid = [
-            'men',      # No tone mark
-            'mn3',      # No vowel
+            'men',  # No tone mark
+            'mn3',  # No vowel
         ]
 
         for input, expected in valid.items():
             actual = replace_untoned_vowel_with_toned(input)
             self.assertEquals(actual, expected)
-        
+
         for input in unsupported:
             self.assertRaises(UnsupportedVowelCombination, replace_untoned_vowel_with_toned, input)
-        
+
         for input in invalid:
             self.assertRaises(ValueError, replace_untoned_vowel_with_toned, input)

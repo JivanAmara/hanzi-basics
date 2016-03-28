@@ -15,6 +15,7 @@ from django.core.management import BaseCommand
 from django.db import transaction
 
 from hanzi_basics.models import PinyinSyllable, Hanzi
+from hanzi_basics.pinyin_nums_to_markers import num_to_tone, UnsupportedVowelCombination
 
 
 class Command(BaseCommand):
@@ -58,6 +59,9 @@ def populate():
     #    The Pinyin strings are the pronunciations of the Hanzi.
     pinyins_for_hanzi = defaultdict(list)
 
+    # List of pinyin strings that couldn't be converted to tone representations for display.
+    no_display_text = []
+
     for i, line in enumerate(matches, 1):
         if i > include_linecount: break
         line_parse_regex = r'(\d+)\s+(.+?)\s+(.*?)\s+([\d.]+)\s+([\w/]+)'
@@ -70,7 +74,6 @@ def populate():
             pronunciation_string_utf8 = pronunciation_string_gbk.decode('gbk').encode('utf-8')
             hanzi_string_utf8 = hanzi_string_gbk.decode('gbk').encode('utf-8')
 
-
             if hanzi_string_utf8 not in hanzis_by_string:
                 h = Hanzi(char=hanzi_string_utf8, use_count=freq)
                 hanzis_by_string[hanzi_string_utf8] = h
@@ -79,7 +82,14 @@ def populate():
                 # Use tone number 5 for syllables with no tone.
                 tone = pstring[-1] if pstring[-1] in '1234' else 5
                 sound = pstring[:-1] if tone != 5 else pstring
-                ps = PinyinSyllable(sound=sound, tone=tone)
+                # Set the display text as a syllable with tone marker
+                #    as opposed to sound-tonenum format.
+                display_text = num_to_tone('{}{}'.format(sound, tone))
+                if display_text == '{}{}'.format(sound, tone):
+                    no_display_text.append('{}{}'.format(sound, tone))
+                    display_text = '{}{}'.format(sound, tone)
+
+                ps = PinyinSyllable(sound=sound, tone=tone, display=display_text)
                 if '{}{}'.format(sound, tone) not in pinyin_syllables_by_string:
                     pinyin_syllables_by_string['{}{}'.format(sound, tone)] = ps
                 pinyins_for_hanzi[hanzi_string_utf8].append('{}{}'.format(sound, tone))
@@ -107,4 +117,6 @@ def populate():
             sys.stdout.flush()
             pinyins = [pinyin_syllables_by_string[ps] for ps in pinyin_strings]
             hanzi.syllables.add(*pinyins)
-    print()
+
+    print('Syllables without tone marker representation (This should be empty):')
+    print(no_display_text)
