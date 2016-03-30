@@ -12,7 +12,7 @@ setup(
     author_email="Development@JivanAmara.net",
     license="Undecided",
     name="hanzi-basics",
-    version="1.1.0",
+    version="1.1.1",
     packages=['hanzi_basics', 'hanzi_basics.migrations',
               'hanzi_basics.management',
               'hanzi_basics.management.commands'
