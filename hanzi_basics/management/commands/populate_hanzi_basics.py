@@ -10,7 +10,7 @@ from _collections import defaultdict
 import encodings
 import re, os
 import sys
-
+import codecs
 from django.core.management import BaseCommand
 from django.db import transaction
 
@@ -31,11 +31,11 @@ def populate():
     """
         The file 'hanzi_frequency.html' was downloaded from:
             http://lingua.mtsu.edu/chinese-computing/statistics/char/list.php?Which=MO
-        on 2016-03-18.
+        on 2016-03-18
     """
     file_dir = os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir))
     file_path = os.path.join(file_dir, 'hanzi_frequency.html')
-    with open(file_path) as freq_file:
+    with codecs.open(file_path, 'rb', 'gb2312', errors='ignore') as freq_file:
         freq_html = freq_file.read()
 
     # Drop all of the html outside the <pre> tags
@@ -70,14 +70,12 @@ def populate():
             print("Regex doesn't match:\n{}\n{}\n{}".format(matches[i - 2], line, matches[i]))
         else:
             # rank, hanzi, frequency, percentile, pinyin pronunciation separated by '/'
-            rank, hanzi_string_gbk, freq, perc, pronunciation_string_gbk = line_data_match.groups()
-            pronunciation_string_utf8 = pronunciation_string_gbk.decode('gbk').encode('utf-8')
-            hanzi_string_utf8 = hanzi_string_gbk.decode('gbk').encode('utf-8')
+            rank, hanzi_string, freq, perc, pronunciation_string = line_data_match.groups()
 
-            if hanzi_string_utf8 not in hanzis_by_string:
-                h = Hanzi(char=hanzi_string_utf8, use_count=freq)
-                hanzis_by_string[hanzi_string_utf8] = h
-            pinyin_strings = pronunciation_string_utf8.split('/')
+            if hanzi_string not in hanzis_by_string:
+                h = Hanzi(char=hanzi_string, use_count=freq)
+                hanzis_by_string[hanzi_string] = h
+            pinyin_strings = pronunciation_string.split('/')
             for pstring in pinyin_strings:
                 # Use tone number 5 for syllables with no tone.
                 tone = pstring[-1] if pstring[-1] in '1234' else 5
@@ -92,7 +90,7 @@ def populate():
                 ps = PinyinSyllable(sound=sound, tone=tone, display=display_text)
                 if '{}{}'.format(sound, tone) not in pinyin_syllables_by_string:
                     pinyin_syllables_by_string['{}{}'.format(sound, tone)] = ps
-                pinyins_for_hanzi[hanzi_string_utf8].append('{}{}'.format(sound, tone))
+                pinyins_for_hanzi[hanzi_string].append('{}{}'.format(sound, tone))
                 print('.', end='')
     print()
 
@@ -107,7 +105,7 @@ def populate():
     Hanzi.objects.bulk_create(hanzis_by_string.values())
     hanzis_by_string = {}
     for hanzi in Hanzi.objects.all():
-        hanzis_by_string[hanzi.char.encode('utf-8')] = hanzi
+        hanzis_by_string[hanzi.char] = hanzi
 
     print(' Connecting Hanzi to pronunciation as PinyinSyllable')
     with transaction.atomic():
