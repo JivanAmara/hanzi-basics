@@ -21,6 +21,7 @@ setup(
         'hanzi_basics': [
             'management/commands/hanzi_frequency.html',
             'management/commands/hanzi_frequency_files/school.css',
+            'fixtures/hanzi_and_pinyin_syllables.json',
         ],
     },
     description='Python package to provide basic models for Chinese language processing',

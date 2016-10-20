@@ -1,2 +1,3 @@
 include hanzi_basics/management/commands/hanzi_frequency.html
 include hanzi_basics/management/commands/hanzi_frequency_files/school.css
+include hanzi_basics/fixtures/hanzi_and_pinyin_syllables.json
